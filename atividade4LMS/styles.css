@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(236, 187, 142, 0.569);
+    font-family: sans-serif;
+    width: 100%;
+}
+
+/* Dropdown */
+select {
+    border: 1px solid white;
+    background-color: #d2691e;
+    color: white;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    width: 300px;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: burlywood;
+
+    padding: 20px 50px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d2691e;
+
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px #d2691e;
+    border-radius: 5px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background 1s;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.separador_nav{
+    display: flex;
+    gap: 20px;
+}
+
+
+.article_generic{
+    margin: 50px 0;
+
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown com 300px */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ecd488;
+    width: 300px;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(148, 74, 74, 0.456);
+    padding: 12px 16px;
+    z-index: 1;
+
+  }
+
+  .dropdown-content p:hover {
+    background-color: #d2691e88;
+    transition: all 0.7s;
+
+  }
+
+  .dropdown-content p {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .container_2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Primeira coluna para a barra lateral, segunda coluna para o conteúdo */
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .menu_fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(214, 139, 0);
+    gap: 20px;
+    padding: 20px 0;
+    border-radius: 0 10px 10px 0;
+    width: 400px;
+    position: fixed;
+  }
+  
+  .page_right {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    flex-direction: column;
+
+    margin-left: 400px;
+  }
